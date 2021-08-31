@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "child-block",
+    "parent-block"
+  ],
+  "version": "independent"
+}

@@ -1,0 +1,8 @@
+.wp-block-justin-wp-plugins-hero-parent{
+    display: flex;
+    flex-direction: row;
+    background: antiquewhite;
+}
+.wp-block-justin-wp-plugins-hero-parent>*>*>.block-editor-block-list__layout{
+    display: flex;
+}

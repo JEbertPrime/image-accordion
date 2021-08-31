@@ -1,0 +1,12 @@
+/**
+ * Note that these styles are loaded *after* common styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+.col.edit {
+	width: -webkit-fill-available;
+	min-width: 100px;
+}
+.wp-block-justin-wp-plugins-hero-child.edit:focus {
+	width: 500px;
+	
+}

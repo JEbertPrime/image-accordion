@@ -1,0 +1,27 @@
+/**
+ * Note that these styles are loaded *before* editor styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+.wp-block-justin-wp-plugins-hero-child {
+	cursor: pointer;
+	background-size: cover;
+	transition:1s;
+	padding-top: 200px;
+	background: linear-gradient(317deg, rgba(255,192,59,1) 0%, rgba(236,134,59,1) 100%);
+}
+.wp-block-justin-wp-plugins-hero-child * {
+	opacity: 0;
+	visibility: hidden!important;
+	transition: opacity 1s;
+}
+.wp-block-justin-wp-plugins-hero-child:focus{
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-position-x: center!important;
+	flex-basis: 50%!important;
+}
+.wp-block-justin-wp-plugins-hero-child:focus * {
+	opacity: 1;
+	visibility: visible!important;
+}
