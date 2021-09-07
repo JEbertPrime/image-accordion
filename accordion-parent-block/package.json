@@ -1,18 +1,18 @@
 {
-	"name": "03-editable-esnext",
+	"name": "image-accordion-parent-block",
 	"version": "1.1.0",
 	"private": true,
-	"description": "Example: Editable (ESNext).",
-	"author": "The WordPress Contributors",
+	"description": "The parent block for the image-accordion plugin",
+	"author": "Justin Ebert",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"WordPress",
 		"block"
 	],
-	"homepage": "https://github.com/WordPress/gutenberg-examples/",
-	"repository": "git+https://github.com/WordPress/gutenberg-examples.git",
+	"homepage": "https://github.com/JEbertPrime/image-accordion/",
+	"repository": "git+https://github.com/JEbertPrime/image-accordion.git",
 	"bugs": {
-		"url": "https://github.com/WordPress/gutenberg-examples/issues"
+		"url": "https://github.com/JEbertPrime/image-accordion/issues"
 	},
 	"main": "build/index.js",
 	"devDependencies": {

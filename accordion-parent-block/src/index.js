@@ -1,8 +1,8 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks } from '@wordpress/block-editor';
 
-registerBlockType( 'justin-wp-plugins/hero-parent', {
-	title: 'Hero Parent Element',
+registerBlockType( 'justin-wp-plugins/accordion-parent', {
+	title: 'image-accordion Parent',
 	category: 'layout',
 	edit: ( { className } ) => {
 		return (

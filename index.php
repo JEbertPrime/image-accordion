@@ -12,6 +12,6 @@
 defined( 'ABSPATH' ) || exit;
 
 
-include 'parent-block/index.php';
-include 'child-block/index.php';
+include 'accordion-parent-block/index.php';
+include 'accordion-child-block/index.php';
 
