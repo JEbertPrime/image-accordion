@@ -1,7 +1,7 @@
 {
 	"name": "image-accordion",
 	"version": "1.1.0",
-	"private": true,
+	"private": false,
 	"description": "A gutenberg plugin which allows users to create image accordion hero elements.",
 	"author": "Justin Ebert",
 	"license": "GPL-2.0-or-later",
