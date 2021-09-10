@@ -20,39 +20,39 @@ defined( 'ABSPATH' ) || exit;
  *
  * Passes translations to JavaScript.
  */
-function hero_child_register_block() {
+function accordion_child_register_block() {
 
 	// automatically load dependencies and version
 	$asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php');
 
 	wp_register_script(
-		'hero-child',
+		'accordion-child',
 		plugins_url( 'build/index.js', __FILE__ ),
 		$asset_file['dependencies'],
 		$asset_file['version']
 	);
 
 	wp_register_style(
-		'hero-child-editor',
+		'accordion-child-editor',
 		plugins_url( 'editor.css', __FILE__ ),
 		array( 'wp-edit-blocks' ),
 		filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' )
 	);
 
 	wp_register_style(
-		'hero-child',
+		'accordion-child',
 		plugins_url( 'style.css', __FILE__ ),
 		array( ),
 		filemtime( plugin_dir_path( __FILE__ ) . 'style.css' )
 	);
 
-	register_block_type( 'justin-wp-plugins/hero-child', array(
-		'style' => 'hero-child',
-		'editor_style' => 'hero-child-editor',
-		'editor_script' => 'hero-child',
+	register_block_type( 'justin-wp-plugins/accordion-child', array(
+		'style' => 'accordion-child',
+		'editor_style' => 'accordion-child-editor',
+		'editor_script' => 'accordion-child',
 	) );
 
   
 
 }
-add_action( 'init', 'hero_child_register_block' );
+add_action( 'init', 'accordion_child_register_block' );

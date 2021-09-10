@@ -1,4 +1,10 @@
-.wp-block-justin-wp-plugins-hero-parent>.row{
-    flex-wrap: nowrap;
+@media (min-width: 768px){
+    .wp-block-justin-wp-plugins-accordion-parent>.row{
+        flex-wrap: nowrap;
+    }
+}
+
+.wp-block-justin-wp-plugins-accordion-parent{
     overflow-x:hidden ;
+
 }

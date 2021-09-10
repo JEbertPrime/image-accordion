@@ -1,10 +1,15 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks } from '@wordpress/block-editor';
+const {useSelect, dispatch, select} = wp.data;
 
 registerBlockType( 'justin-wp-plugins/accordion-parent', {
 	title: 'image-accordion Parent',
 	category: 'layout',
-	edit: ( { className } ) => {
+	edit: ( { className, clientId } ) => {
+		var children = select('core/block-editor').getBlocksByClientId(clientId)[0].innerBlocks;
+		children.forEach(function(child, i, arr){
+			dispatch('core/block-editor').updateBlockAttributes(child.clientId, {index: i, last: Object.is(arr.length - 1, i)?  'true':'false'})
+		});
 		return (
 			<div className={ className }>
 				<div className='row'>
@@ -14,7 +19,7 @@ registerBlockType( 'justin-wp-plugins/accordion-parent', {
 			</div>
 		);
 	},
-	save: ( { className } ) => {
+	save: ( { className, attributes } ) => {
 		return (
 			<div className={ className }>
 				<div className='row'>

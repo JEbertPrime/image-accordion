@@ -31,6 +31,11 @@ function accordion_parent_register_block() {
 		$asset_file['version'],
 		true
 	);
+	wp_register_script(
+		'click_handler',
+		plugins_url('build/clickHandler.js', __FILE__),'' ,'' , true
+
+	);
 	wp_register_style(
 		'accordion-parent-editor',
 		plugins_url('editor.css', __FILE__),
@@ -47,6 +52,7 @@ function accordion_parent_register_block() {
 		'justin-wp-plugins/accordion-parent',
 		[
 			'editor_script' => 'accordion-parent',
+			'script' => 'click_handler',
 			'style' => 'accordion-parent',
 			'editor_style'=> 'accordion-parent-editor',
 		]

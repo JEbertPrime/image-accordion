@@ -2,26 +2,59 @@
  * Note that these styles are loaded *before* editor styles, so that
  * editor-specific styles using the same selectors will take precedence.
  */
-.wp-block-justin-wp-plugins-hero-child {
+.wp-block-justin-wp-plugins-accordion-child {
 	cursor: pointer;
 	background-size: cover;
+	height: calc(99vh - 100px);
 	transition:1s;
 	padding-top: 200px;
 	background: linear-gradient(317deg, rgba(255,192,59,1) 0%, rgba(236,134,59,1) 100%);
 }
-.wp-block-justin-wp-plugins-hero-child * {
+.wp-block-justin-wp-plugins-accordion-child * {
 	opacity: 0;
 	visibility: hidden!important;
 	transition: opacity 1s;
 }
-.wp-block-justin-wp-plugins-hero-child:focus{
+
+.wp-block-justin-wp-plugins-accordion-child.active{
 	padding-top: 200px;
 	padding-left: 50px;
 	padding-right: 50px;
 	background-position-x: center!important;
-	flex-basis: 50%!important;
+	flex-basis: 33%!important;
 }
-.wp-block-justin-wp-plugins-hero-child:focus * {
+.wp-block-justin-wp-plugins-accordion-child.active * {
 	opacity: 1;
 	visibility: visible!important;
+}
+.wp-block-justin-wp-plugins-accordion-child button{
+	background: transparent;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 40%;
+    font-family: monospace;
+    font-size: xxx-large;
+}
+.wp-block-justin-wp-plugins-accordion-child .left{
+	left:10px;
+}
+.wp-block-justin-wp-plugins-accordion-child .right{
+	right:10px;
+}
+@media (max-width:768px){
+	.wp-block-justin-wp-plugins-accordion-child{
+		flex-basis:auto!important;
+		height: auto;
+		max-height:75px;
+		background-size: cover;
+		padding-top: 0px;
+	}
+	.wp-block-justin-wp-plugins-accordion-child.active{
+		padding-top: 0px;
+		height: auto;
+		transition: 1s;
+		max-height: 500px;
+
+	}
 }

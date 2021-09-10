@@ -1,8 +1,8 @@
-.wp-block-justin-wp-plugins-hero-parent{
+.wp-block-justin-wp-plugins-accordion-parent{
     display: flex;
     flex-direction: row;
     background: antiquewhite;
 }
-.wp-block-justin-wp-plugins-hero-parent>*>*>.block-editor-block-list__layout{
+.wp-block-justin-wp-plugins-accordion-parent>*>*>.block-editor-block-list__layout{
     display: flex;
 }
